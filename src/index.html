@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation: Midnight Cipher | OSINT Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ===== LANDING PAGE ===== -->
+    <div id="landing-page">
+        <video id="landing-video" autoplay muted loop playsinline>
+            <source src="../assets/crime_file.mp4" type="video/mp4">
+        </video>
+        <div class="landing-overlay">
+            <div class="landing-content">
+                <h1 class="landing-title glitch" data-text="OPERATION: MIDNIGHT CIPHER">OPERATION: MIDNIGHT CIPHER</h1>
+                <p class="landing-subtitle">CLASSIFIED — TOP SECRET CLEARANCE REQUIRED</p>
+                <button id="start-mission-btn">▶ START YOUR MISSION</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div id="main-content" class="hidden">
+        <div class="container">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="OPERATION: MIDNIGHT CIPHER">OPERATION: MIDNIGHT CIPHER</h1>
+                </div>
+                <p class="subtitle">CLASSIFIED: TOP SECRET clearance required.</p>
+            </header>
+
+            <!-- Mission Brief -->
+            <section id="brief" class="dossier-section">
+                <h2><span class="redacted-text">OPERATIVE</span> BRIEFING</h2>
+                <div class="paper-texture">
+                    <p><strong>DATE:</strong> 2026-02-19</p>
+                    <p><strong>CLEARANCE LEVEL:</strong> EASY</p>
+                    <p><strong>STATUS:</strong> ACTIVE — 3 OPEN CHALLENGES</p>
+                    <hr>
+                    <p>Operative. You have been selected for three independent intelligence operations. Each challenge
+                        is self-contained and requires a different set of OSINT skills — image analysis, geolocation,
+                        and technical identification.</p>
+                    <p>Your objective: study the evidence provided for each mission, identify the target, and extract
+                        the flag.</p>
+                    <p class="instruction">Submit your findings directly to the team leader. Trust nothing. Verify
+                        everything.</p>
+                </div>
+            </section>
+
+            <!-- Active Missions -->
+            <section id="missions" class="dossier-section">
+                <h2>ACTIVE MISSIONS</h2>
+                <div class="mission-grid">
+                    <!-- Challenge 1 -->
+                    <div class="mission-card" id="mission-1">
+                        <div class="mission-header">MISSION 001: THE EPOCH TIMES</div>
+                        <div class="mission-body">
+                            <div class="img-wrapper">
+                                <img src="../assets/challenge1.webp" alt="Epoch Times Audience" class="challenge-img">
+                                <a href="../assets/challenge1.webp" download="mission_001_epoch_times.webp"
+                                    class="download-btn">⬇ DOWNLOAD EVIDENCE</a>
+                            </div>
+                            <div class="mission-briefing">
+                                <p><strong>TASK BRIEFING:</strong> This photo was taken from a page of the Epoch Times,
+                                    a
+                                    Chinese newspaper.</p>
+                                <ul>
+                                    <li>a) What was the audience applauding?</li>
+                                    <li>b) When was the photo taken?</li>
+                                    <li>c) What is the name of the venue?</li>
+                                </ul>
+                                <p class="flag-format">FLAG: OMC{venue_name}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 2 -->
+                    <div class="mission-card" id="mission-2">
+                        <div class="mission-header">MISSION 002: THE MASKED MAN</div>
+                        <div class="mission-body">
+                            <div class="img-wrapper">
+                                <img src="../assets/challenge2.webp" alt="Paris Masked Man" class="challenge-img">
+                                <a href="../assets/challenge2.webp" download="mission_002_masked_man.webp"
+                                    class="download-btn">⬇ DOWNLOAD EVIDENCE</a>
+                            </div>
+                            <div class="mission-briefing">
+                                <p><strong>TASK BRIEFING:</strong> A photograph was taken in Paris on December 3rd,
+                                    2023,
+                                    around 18:00. A masked individual was spotted in a central, upscale district.</p>
+                                <p>Identify the nearest metro station to the location where he was photographed.</p>
+                                <p class="flag-format">FLAG: OMC{STATION_NAME}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge 3 -->
+                    <div class="mission-card" id="mission-3">
+                        <div class="mission-header">MISSION 003: THE GHOST TRAIN</div>
+                        <div class="mission-body">
+                            <div class="img-wrapper">
+                                <img src="../assets/challenge3.webp" alt="Cool Train" class="challenge-img">
+                                <a href="../assets/challenge3.webp" download="mission_003_ghost_train.webp"
+                                    class="download-btn">⬇ DOWNLOAD EVIDENCE</a>
+                            </div>
+                            <div class="mission-briefing">
+                                <p><strong>TASK BRIEFING:</strong> Identify this train's operating company, model
+                                    number,
+                                    and its maximum service speed (km/h in regular traffic).</p>
+                                <p class="flag-format">FLAG: OMC{OPERATOR-MODELNUMBER-SERVICESPEED}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; OMC cyber security team</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
