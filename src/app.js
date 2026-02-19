@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Console Welcome Message
     console.log("%c STOP! ", "background: red; color: white; font-size: 24px; font-weight: bold;");
     console.log("%c This area is for authorized agents only. If you found this by mistake, close the window immediately.", "color: red; font-size: 16px;");
     console.log("Agent, your first clue might be hidden in plain sight... or in the source.");
 
-    // ── Landing Page ──────────────────────────────────────────
     const landingPage = document.getElementById('landing-page');
     const mainContent = document.getElementById('main-content');
     const startBtn = document.getElementById('start-mission-btn');
@@ -13,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.addEventListener('click', () => {
             landingPage.style.opacity = '1';
             landingPage.style.transition = 'opacity 0.8s ease';
-            // Fade out landing, reveal main content
             setTimeout(() => {
                 landingPage.style.opacity = '0';
             }, 50);
@@ -27,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ── Mission Card Interaction ──────────────────────────────
     const missionCards = document.querySelectorAll('.mission-card');
     missionCards.forEach(card => {
         card.addEventListener('click', () => {
