@@ -6,6 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const landingPage = document.getElementById('landing-page');
     const mainContent = document.getElementById('main-content');
     const startBtn = document.getElementById('start-mission-btn');
+    const landingVideo = document.getElementById('landing-video');
+
+    const VIDEO_LOOP_END = 58;
+    if (landingVideo) {
+        landingVideo.addEventListener('timeupdate', () => {
+            if (landingVideo.currentTime >= VIDEO_LOOP_END) {
+                landingVideo.currentTime = 0;
+            }
+        });
+    }
 
     if (startBtn) {
         startBtn.addEventListener('click', () => {
