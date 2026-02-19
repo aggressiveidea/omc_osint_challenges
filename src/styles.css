@@ -10,7 +10,6 @@
     --font-secondary: 'Courier Prime', monospace;
 }
 
-/* Utility */
 .hidden {
     display: none !important;
 }
@@ -24,8 +23,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
-
-/* ========= LANDING PAGE ========= */
 #landing-page {
     position: fixed;
     inset: 0;
@@ -107,7 +104,6 @@ body {
     padding: 20px;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     padding: 100px 0 50px;
@@ -161,7 +157,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* Dossier Section */
 .dossier-section {
     margin: 40px 0;
 }
@@ -303,7 +298,6 @@ h2 {
     padding-top: 10px;
 }
 
-/* Terminal Section */
 .terminal-section {
     margin: 60px 0;
 }
@@ -378,7 +372,6 @@ button:active {
     min-height: 1.6em;
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin-top: 80px;
